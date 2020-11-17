@@ -1,0 +1,115 @@
+//Variables
+$color-principal: #5F5957;
+$color-subTit: #919C40 ;
+$color-cajas: #F1C40F;
+$bg-color: #B23921;
+$section-color: lighten($color-cajas, 20);
+$size-24: 24px;
+$size-18: 18px;
+$color-principal-dark: darken($color-principal, 20);
+$color-principal-light: lighten($color-principal, 20);
+
+//Fuente
+html{font-family: 'Josefin Sans', sans-serif;}
+
+//Estilos
+.estilo-h1{
+	font-weight: bold;
+	font-size: $size-24;
+	font-style: italic;
+	color: $color-principal-dark;
+	text-align: center;
+	text-decoration-line: underline;
+}
+.estilo-h2{
+	color: $color-principal;
+	font-size: $size-18;
+	text-align: center;
+}
+.sub-h2{
+	color: $color-principal-light;
+	text-align: justify;
+}
+.estilo-contacto{
+	color: $color-principal;
+	font-size: $size-18;
+	line-height: 1.5;
+}
+.sub-contacto{
+	color: $color-principal-light;
+	text-decoration-line: underline;
+}
+.sub-menu{
+	text-decoration: none;
+	color: $color-principal-light;
+}
+.menu{
+	text-decoration: none;
+	color: $color-subTit;
+	line-height: 3.5;
+}
+.footer{
+	color: $color-principal-light;
+}
+#lista{
+	line-height: 1.5;
+	ul{
+		color: $color-subTit;
+		li{
+			color: $color-principal-dark;
+			div ul{
+				color: $color-principal-light;
+			}
+		}
+	}
+}
+aside{text-align: center;}
+
+//Codigo
+
+body {background-color: $bg-color;}
+#grids {
+	display: grid;
+	grid-template-areas: 
+		"nav titulo titulo"
+		"nav h2 publicidad"
+		"nav lista publicidad"
+		"nav pieDePagina pieDePagina";
+	grid-template-rows: 100px 1fr 1fr 75px;  
+	grid-template-columns: 20% auto 15%;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	height: 100vh;
+	margin: 0;
+}
+#grids-nos {
+	display: grid;
+	grid-template-areas: 
+		"nav titulo titulo"
+		"nav h2 publicidad"
+		"nav h2 publicidad"
+		"nav pieDePagina pieDePagina";
+	grid-template-rows: 100px 1fr 1fr 75px;  
+	grid-template-columns: 20% auto 15%;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	height: 100vh;
+	margin: 0;
+}
+header, footer, section, nav, aside {
+  padding: 1.2em;
+  background: $color-cajas;
+  }
+header {grid-area: titulo;}
+footer {grid-area: pieDePagina;}
+section {background-color: $section-color;
+	#h2 {grid-area: h2;}
+	#lista {grid-area: lista;}
+}
+nav {grid-area: nav;}
+aside {grid-area: publicidad;} 
+footer{
+	div{
+		a {justify-content: space-around; align-content: center;}
+	}
+}

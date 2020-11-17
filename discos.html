@@ -1,0 +1,906 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-widht, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Discos</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">		<link rel="stylesheet" type="text/css" href="css\style.css">
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="css/Imagenes/iconos/logo.png" />
+	</head>
+	<body>
+		<!--NavBar!-->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+			<a class="navbar-brand babasonicos" href="index.html" id="logo">BABASONICOS</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="biografia.html">Biografia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="fechas.html">Proximas Fechas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="discos.html">Discografia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="videos.html">Videos</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--CAROUSEL!-->
+		<div id="containerCarousel" class="container">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="css\Imagenes\carousel1.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="css\Imagenes\carousel2.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="css\Imagenes\carousel3.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!--CUERPO DE DISCOS!-->
+		<div id="discos" class="container">
+			<div class="row justify-content-center">
+				<h1>Nuestros Discos</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-around">
+				<!--DISCO DISCUTIBLE!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="discutible" data-toggle="modal" data-target="#discutible">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\discutible.jpg">
+					</a>
+					<br>
+					<a href="discutible" data-toggle="modal" data-target="#discutible" class="nomDiscos">
+						DISCUTIBLE
+					</a>
+				</div>
+				<!--DISCO REPUESTO DE FE!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="repuestoDeFe" data-toggle="modal" data-target="#repuestoDeFe">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\repuesto.jpg">
+					</a>
+					<br>
+					<a href="repuestoDeFe" data-toggle="modal" data-target="#repuestoDeFe" class="nomDiscos">
+						REPUESTO DE FE
+					</a>				
+				</div>
+				<!--DISCO IMPUESTO DE FE!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="impuestoDeFe" data-toggle="modal" data-target="#impuestoDeFe">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\impuesto.jpg">
+					</a>
+					<br>
+					<a href="impuestoDeFe" data-toggle="modal" data-target="#impuestoDeFe" class="nomDiscos">
+						IMPUESTO DE FE
+					</a>				
+				</div>
+				<!--DISCO ROMANTISISMICO!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="romantisismico" data-toggle="modal" data-target="#romantisismico">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\romantisismico.jpg">
+					</a>
+					<br>
+					<a href="romantisismico" data-toggle="modal" data-target="#romantisismico" class="nomDiscos">
+						ROMANTISISMICO
+					</a>
+				</div>
+				<!--DISCO A PROPOSITO!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="aProposito" data-toggle="modal" data-target="#aProposito">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\a-proposito.jpg">
+					</a>
+					<br>
+					<a href="aProposito" data-toggle="modal" data-target="#aProposito" class="nomDiscos">
+						A PROPOSITO
+					</a>				
+				</div>
+				<!--DISCO MUCHO +!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="muchoMas" data-toggle="modal" data-target="#muchoMas">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\muchomas.jpg">
+					</a>
+					<br>
+					<a href="muchoMas" data-toggle="modal" data-target="#muchoMas" class="nomDiscos">
+						MUCHO +
+					</a>				
+				</div>
+				<!--DISCO MUCHO!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="mucho" data-toggle="modal" data-target="#mucho">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\mucho.jpg">
+					</a>
+					<br>
+					<a href="mucho" data-toggle="modal" data-target="#mucho" class="nomDiscos">
+						MUCHO
+					</a>				
+				</div>
+				<!--DISCO ANOCHE!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="anoche" data-toggle="modal" data-target="#anoche">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\anoche.jpg">
+					</a>
+					<br>
+					<a href="anoche" data-toggle="modal" data-target="#anoche" class="nomDiscos">
+						ANOCHE
+					</a>				
+				</div>
+				<!--DISCO LUCES!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="luces" data-toggle="modal" data-target="#luces">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\luces.jpg">
+					</a>
+					<br>
+					<a href="luces" data-toggle="modal" data-target="#luces" class="nomDiscos">
+						LUCES
+					</a>				
+				</div>
+				<!--DISCO INFAME!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="infame" data-toggle="modal" data-target="#infame">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\infame.jpg">
+					</a>
+					<br>
+					<a href="infame" data-toggle="modal" data-target="#infame" class="nomDiscos">
+						INFAME
+					</a>				
+				</div>
+				<!--DISCO JESSICO!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="jessico" data-toggle="modal" data-target="#jessico" class="nomDiscos">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\jessico.jpg">
+					</a>
+					<br>
+					<a href="jessico" data-toggle="modal" data-target="#jessico" class="nomDiscos">
+						JESSICO
+					</a>				
+				</div>
+				<!--DISCO MIAMI!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="miami" data-toggle="modal" data-target="#miami">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\miami.jpg">
+					</a>
+					<br>
+					<a href="miami" data-toggle="modal" data-target="#miami" class="nomDiscos">
+						MIAMI
+					</a>				
+				</div>
+				<!--DISCO BABASONICA!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="babasonica" data-toggle="modal" data-target="#babasonica">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\babasonica.jpg">
+					</a>
+					<br>
+					<a href="babasonica" data-toggle="modal" data-target="#babasonica" class="nomDiscos">
+						BABASONICA
+					</a>				
+				</div>
+				<!--DISCO DOPADROMO!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="dopadromo" data-toggle="modal" data-target="#dopadromo">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\dopadromo.jpg">
+					</a>
+					<br>
+					<a href="dopadromo" data-toggle="modal" data-target="#dopadromo" class="nomDiscos">
+						DOPADROMO
+					</a>				
+				</div>
+				<!--DISCO TRANCE-ZOMBA!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="tranceZomba" data-toggle="modal" data-target="#tranceZomba">
+						<img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\trance-zomba.jpg">
+					</a>
+					<br>
+					<a href="tranceZomba" data-toggle="modal" data-target="#tranceZomba" class="nomDiscos">
+						TRANCE-ZOMBA
+					</a>				
+				</div>
+				<!--DISCO PASTO!-->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="pasto" data-toggle="modal" data-target="#pasto"><img class="rounded mx-auto d-block imgDiscos" src="css\Imagenes\Discos\pasto.jpg">
+					</a>
+					<br>
+					<a href="pasto" data-toggle="modal" data-target="#pasto" class="nomDiscos">
+						PASTO
+					</a>				
+				</div>
+			</div>		
+		</div>
+		<!--MODALES!-->
+		<!--MODAL DISCUTIBLE!-->
+		<div class="modal fade" id="discutible" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">DISCUTIBLE - 2018</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">La pregunta</li>
+							<li>Ingrediente</li>
+							<li>Bestia pequeña</li>
+							<li>Trans-algo</li>
+							<li>Partícula</li>
+							<li>Adios en Pompeya</li>
+							<li>Teóricos</li>
+							<li>Cretino</li>
+							<li>Orfeo</li>
+							<li>Un Pálpito</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/5c6b4NSsJHroOvLFUNBE3t" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL REPUESTO DE FE!-->
+		<div class="modal fade" id="repuestoDeFe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">REPUESTO DE FE - 2017</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Posesión del tercer tipo (En vivo)</li>
+							<li>Irresponsables (En vivo)</li>
+							<li>El pupilo (En vivo)</li>
+							<li>Vampi (En vivo)</li>
+							<li>El loco (En vivo)</li>
+							<li>Casualidad (En vivo)</li>
+							<li>El maestro (En vivo)</li>
+							<li>Putita (En vivo)</li>
+							<li>Letra chica (En vivo)</li>
+							<li>Yegua (En vivo)</li>
+							<li>Capricho (En vivo)</li>
+							<li>Gratis (En vivo)</li>
+							<li>Soy rock (En vivo)</li>
+							<li>Chisme de zorro (En vivo)</li>
+							<li>Los burócratas del amor (En vivo)</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/37T4qeUVTpx7Ps3HhSKdKc?play=true&utm_source=open.spotify.com&utm_medium=open" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL IMPUESTO DE FE!-->
+		<div class="modal fade" id="impuestoDeFe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">IMPUESTO DE FE - 2016</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">El Colmo (En Vivo)</li>
+							<li>Irresponsables (En vivo)</li>
+							<li>Yegua (En vivo)</li>
+							<li>Puesto (En Vivo)</li>
+							<li>Vampi (En Vivo)</li>
+							<li>Putita (En Vivo)</li>
+							<li>Cómo Eran las Cosas (En Vivo)</li>
+							<li>El Maestro (En Vivo)</li>
+							<li>Sin Mi Diablo (En Vivo)</li>
+							<li>Rubí (En Vivo)</li>
+							<li>Natural (En Vivo)</li>
+							<li>Muñeco / Deléctrico (En Vivo)</li>
+							<li>Los Calientes (En Vivo)</li>
+							<li>Camarín (En Vivo)</li>
+							<li>Zumba / Yoli / Viva Satana / La Roncha (En Vivo)</li>
+							<li>Su Ciervo (En Vivo)</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://play.spotify.com/album/6eWrCdzfRUvNMDYWGHIExi" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark 	" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL ROMANTISISMICO!-->
+		<div class="modal fade" id="romantisismico" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">ROMANTISISMICO - 2013</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">La lanza</li>
+							<li>Aduana de palabras</li>
+							<li>El baile de Odín</li>
+							<li>Runrun</li>
+							<li>Los burócratas del amor</li>
+							<li>Negrita</li>
+							<li>Uso</li>
+							<li>Humo</li>
+							<li>Casi</li>
+							<li>Uno tres dos</li>
+							<li>Paisano</li>
+							<li>Celofán</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://play.spotify.com/album/1x93LZe2PKKrgePH2GZjCP" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL A PROPOSITO!-->
+		<div class="modal fade" id="aProposito" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">A PROPOSITO - 2011</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Flora y fauno</li>
+							<li>Fiesta popular</li>
+							<li>Tormento/Pulpito</li>
+							<li>Deshoras</li>
+							<li>Ideas</li>
+							<li>En privado</li>
+							<li>Muñeco de Haití</li>
+							<li>El pupilo</li>
+							<li>Barranca abajo</li>
+							<li>Chisme de zorro</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://play.spotify.com/album/5m2jKkOgLvg8Bw0miv7SIi" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL A MUCHO +!-->
+		<div class="modal fade" id="muchoMas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">MUCHO + - 2009</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Formidable</li>
+							<li>Todo dicho</li>
+							<li>Para lelos</li>
+							<li>Mientras tanto</li>
+							<li>Letra chica</li>
+							<li>El pozo</li>
+							<li>Parece</li>
+							<li>Pijamas RMX</li>
+							<li>Nosotros (mezcla 2)</li>
+							<li>Yo anuncio (mezcla 2)</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://play.spotify.com/album/3ab3BXJDZnVyS354mOUL3j" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL A MUCHO!-->
+		<div class="modal fade" id="mucho" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">MUCHO - 2008</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Yo anuncio</li>
+							<li>Pijamas</li>
+							<li>Escamas</li>
+							<li>Cuello rojo</li>
+							<li>Cómo eran las cosas</li>
+							<li>Microdancing</li>
+							<li>Las demás</li>
+							<li>Estoy rabioso</li>
+							<li>Nosotros</li>
+							<li>El ídolo</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/0DUCdIMPrlfPFPPKsNyzx3" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL ANOCHE!-->
+		<div class="modal fade" id="anoche" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">ANOCHE - 2005</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Asi se habla</li>
+							<li>Carismático</li>
+							<li>Yegua</li>
+							<li>Un flash</li>
+							<li>Pobre duende</li>
+							<li>Solita</li>
+							<li>Puesto</li>
+							<li>Falsario</li>
+							<li>Capricho</li>
+							<li>El colmo</li>
+							<li>Ciegos por el diezmo</li>
+							<li>Exámenes</li>
+							<li>Muñeco</li>
+							<li>Luces</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/5uBA88xQSrGS8sfVru3bWC" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL LUCES!-->
+		<div class="modal fade" id="luces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">LUCES - 2007</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Así se habla</li>
+							<li>Carismático</li>
+							<li>Puesto</li>
+							<li>Suturno</li>
+							<li>Capricho</li>
+							<li>El colmo</li>
+							<li>Yegua</li>
+							<li>Putita</li>
+							<li>Sin mi diablo</li>
+							<li>Pendejo</li>
+							<li>Irresponsables</li>
+							<li>Ciegos por el diezmo</li>
+							<li>Exámenes</li>
+							<li>Y qué?</li>
+							<li>Risa</li>
+							<li>Deléctrico</li>
+							<li>El loco</li>
+							<li>Pobre Duende</li>
+							<li>Confundismo</li>
+							<li>Testigo de nadie</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/68FizPM0q7QdTRjPNtfY4u" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL INFAME!-->
+		<div class="modal fade" id="infame" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">INFAME - 2003</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Irresponsables</li>
+							<li>Risa</li>
+							<li>Pistero</li>
+							<li>Estertor</li>
+							<li>Putita</li>
+							<li>Suturno</li>
+							<li>Mareo</li>
+							<li>Sin mi diablo</li>
+							<li>Curtis</li>
+							<li>Y qué</li>
+							<li>La puntita</li>
+							<li>Fan de Scorpions</li>
+							<li>Once</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/7FYLw9fTOiYnJFbFk2Mntn" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL JESSICO!-->
+		<div class="modal fade" id="jessico" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">JESSICO - 2001</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Los calientes</li>
+							<li>Fizz</li>
+							<li>Deléctrico</li>
+							<li>Soy rock</li>
+							<li>Pendejo</li>
+							<li>El loco</li>
+							<li>La fox</li>
+							<li>Tóxica</li>
+							<li>Yoli</li>
+							<li>Rubí</li>
+							<li>Camarín</li>
+							<li>Atomicum</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/2VMsGuuC4CDcyZ8qp7njWh" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL MIAMI!-->
+		<div class="modal fade" id="miami" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">MIAMI - 1999</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">4 AM</li>
+							<li>Desfachatados</li>
+							<li>El ringo</li>
+							<li>El sumum</li>
+							<li>La roncha</li>
+							<li>Paraguayana</li>
+							<li>Valle de valium</li>
+							<li>Bardo de estrella</li>
+							<li>El playboy</li>
+							<li>Drag dealer</li>
+							<li>Gustavo Show</li>
+							<li>Combustible</li>
+							<li>Charada</li>
+							<li>Grand prix</li>
+							<li>Colgado</li>
+							<li>Mal viaje</li>
+							<li>El shopping</li>
+							<li>Casualidad</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/5ZfZ0PWqGTRHmOxkIkQaLE" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL BABASONICA!-->
+		<div class="modal fade" id="babasonica" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">BABASONICA - 1997</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Egocripta</li>
+							<li>Seis vírgenes descalzas</li>
+							<li>Demonomanía</li>
+							<li>Sharon Tate</li>
+							<li>Sátiro</li>
+							<li>Parafinada</li>
+							<li>Delnitro</li>
+							<li>Esther Narcótica</li>
+							<li>Calmado, matamos al venado</li>
+							<li>Convoy</li>
+							<li>Pasta de hablar</li>
+							<li>Passionale</li>
+							<li>El Adversario</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/4Ql26DUHyQwn7dlZhrmxb4" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL DOPADROMO!-->
+		<div class="modal fade" id="dopadromo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">DOPADROMO - 1996</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Zumba</li>
+							<li>El medium</li>
+							<li>Cybernecia</li>
+							<li>Safari vixen</li>
+							<li>Viva Satana</li>
+							<li>Perfume casino</li>
+							<li>Calmatica</li>
+							<li>Coyarama</li>
+							<li>Su majestad</li>
+							<li>Pesadilla biónica del perro biónico</li>
+							<li>Gronchótica</li>
+							<li>Su ciervo</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/3ff4NiG7SdGKqAaHXd35xl" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL TRANCE-ZOMBA!-->
+		<div class="modal fade" id="tranceZomba" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">TRANCE-ZOMBA - 1994</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">Desarmate</li>
+							<li>Malón</li>
+							<li>Montañas de agua</li>
+							<li>Coralcaraza</li>
+							<li>Ascendiendo</li>
+							<li>Patinador sagrado</li>
+							<li>Koyote</li>
+							<li>Poder ñandú</li>
+							<li>Arbol palmera</li>
+							<li>Sheeba baby</li>
+							<li>Misericordia</li>
+							<li>Posesión del tercer tipo</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/67kcVCT0DElUimIfyZ2MyS" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--MODAL PASTO-->
+		<div class="modal fade" id="pasto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">PASTO</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ol class="modalDisco">
+							<li value="1">D-Generacion</li>
+							<li>Tripeando</li>
+							<li>41″ de ocio</li>
+							<li>Sobre la hierba</li>
+							<li>Chicos en el pasto</li>
+							<li>Canción de la bandera</li>
+							<li>La era del amor (Parte 1)</li>
+							<li>Natural</li>
+							<li>Mutha Fucka</li>
+							<li>Somos la pelota</li>
+							<li>Guarda D.P.!</li>
+							<li>Bien</li>
+							<li>Listo</li>
+							<li>Indios</li>
+							<li>Fiebre roller</li>
+							<li>Sol naranja</li>
+							<li>Umito</li>
+							<li>Margaritas</li>
+							<li>D-generacion (Trask Mix)</li>
+						</ol>
+						<div class="row justify-content-center">
+							<div class="col-1">
+								<a href="https://open.spotify.com/album/0iKLZXL2Hp0XJFlhAyFqHa" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- REDES SOCIALES!-->
+		<div class="d-none d-md-block">
+			<aside id="redesSociales">
+				<div><a href="http://facebook.com/babasonicosoficial" target="Facebook" class="icono icono-faceboook"><img src="css\Imagenes\Iconos\facebook2.png"></a></div>
+				<div><a href="http://twitter.com/babasonicos" target="Twitter" class="icono icono-twitter"><img src="css\Imagenes\Iconos\twitter2.png"></a></div>
+				<div><a href="http://instagram.com/babasonicos" target="Instagram" class="icono icono-instagram"><img src="css\Imagenes\Iconos\instagram2.png"></a></div>
+				<div><a href="http://youtube.com/babasonicos" target="YouTube" class="icono icono-youTube"><img src="css\Imagenes\Iconos\youtube2.png"></a></div>
+				<div><a href="https://open.spotify.com/artist/2F9pvj94b52wGKs0OqiNi2" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a></div>
+			</aside>
+		</div>
+		<!-- REDES SOCIALES CHICAS!-->
+		<div class="container.fluid">
+			<div class="d-block d-md-none mx-auto">
+				<aside >
+					<div class="row justify-content-center" id="redesSocialesChica">
+						<div class="col-1 redesSocialesChica">
+							<a href="http://facebook.com/babasonicosoficial" target="Facebook" class="icono icono-faceboook"><img src="css\Imagenes\Iconos\facebook2.png"></a>
+						</div>
+						<div class="col-1 redesSocialesChica">
+							<a href="http://twitter.com/babasonicos" target="Twitter" class="icono icono-twitter"><img src="css\Imagenes\Iconos\twitter2.png"></a>
+						</div>
+						<div class="col-1 redesSocialesChica">
+							<a href="http://instagram.com/babasonicos" target="Instagram" class="icono icono-instagram"><img src="css\Imagenes\Iconos\instagram2.png"></a>
+						</div>
+						<div class="col-1 redesSocialesChica">
+							<a href="http://youtube.com/babasonicos" target="YouTube" class="icono icono-youTube"><img src="css\Imagenes\Iconos\youtube2.png"></a>
+						</div>
+						<div class="col-1 redesSocialesChica">
+							<a href="https://open.spotify.com/artist/2F9pvj94b52wGKs0OqiNi2" target="Spotify" class="icono icono-spotify"><img src="css\Imagenes\Iconos\spotify2.png"></a>
+						</div>
+					</div>
+				</aside>
+			</div>
+			<!-- FOOTER!-->
+			<div class="container.fluid" id="footer">
+				<footer>
+					<p>2020 - <td><a href="#">www.babasonicos.com</a></td> - LBDesing.</p>
+				</footer>
+
+			</div>
+		</body>
+
+		<!--LIBRERIA JS!-->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		</html>
